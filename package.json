@@ -1,0 +1,19 @@
+{
+  "name": "date-tool-react-native",
+  "version": "1.0.5",
+  "description": "dateTool",
+  "keywords": [
+    "tool",
+    "dateTool"
+  ],
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com:Ruanyang2015/dateTool.git",
+    "type": "git"
+  },
+  "bin": {
+    "rock-socket-cli": "bin/rock-socket-cli.js"
+  },
+  "author": "ruanyang",
+  "license": "MIT"
+}
