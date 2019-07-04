@@ -1,6 +1,9 @@
 /**
  * Created by ruanyangyang on 2018/11/5.
  */
+let moment = require('moment'); //load moment module to set local language
+require('moment/locale/zh-cn'); //for import moment local language file during the application build
+moment.locale('zh-cn');//set moment local language to zh-cn
 
 Date.prototype.Format = function (fmt) {
     var o = {
@@ -52,6 +55,11 @@ export const getCurrentDateWidthFormat = format => {
     else
         return getCurrentdefaultTime();
 };
+//  日期格式转换
+export const getCurrentDateWidthFormatPro=(format='YYYY/MM/DD',time)=>{
+    let create_at = moment(time).format(format);
+    return create_at;
+}
 
 export const ResolveTime = (time) => {
     // var datestr = time.toString().replace(/-/g, "/");
